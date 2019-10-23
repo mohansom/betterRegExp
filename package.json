@@ -3,12 +3,17 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "",
+    "build": "",
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/FFFXUE/Jest-RegExp.git"
   },
   "author": "liujianfeng",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.35.0"
+  }
 }
