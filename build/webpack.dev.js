@@ -6,6 +6,7 @@ function resolve(dir) {
 
 module.exports = {
     mode: 'development',
+    devtool: "inline-source-map",
     entry: './src/index.ts',
     output:{
         path: resolve('dist'),
@@ -21,14 +22,9 @@ module.exports = {
         rules:[
             {
                 test: /\.tsx?$/,
-                use: ['babel-loader','ts-loader'],
+                use: ['ts-loader'],
                 include:[resolve('src'), resolve('__tests__')]
             },
-            {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
-                include: [resolve('src'), resolve('__tests__')]
-            }
         ]
     }
 }

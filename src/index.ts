@@ -1,4 +1,1 @@
-function buildName(firstName: string, lastName: string) {
-    return firstName + " " + lastName;
-}
-console.log("123")
+export const myAdd = function(x: number, y: number): number { return x + y; };
