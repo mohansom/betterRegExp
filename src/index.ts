@@ -1,1 +1,5 @@
-export const myAdd = function(x: number, y: number): number { return x + y; };
+export default class BetterRegExp{
+    constructor(){
+        
+    }
+}
