@@ -9,8 +9,8 @@ module.exports = {
     entry: './src/index.ts',
     output:{
         path: resolve('dist'),
-        filename: 'RegExp.js',
-        library: 'RegExp',
+        filename: 'betterRegExp.js',
+        library: 'betterRegExp',
         libraryTarget: 'umd'
     },
     resolve: {

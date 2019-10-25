@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test RegExp</title>
+    <title>Test betterRegExp</title>
+    <script src="/assets/betterRegExp.js"></script>
+    <style>
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        .root > div{
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <div>
-
+    <div class="root">
+        <div class="test-phone">
+            <label for="phone">手机号码测试:</label>
+            <input type="text" id="phone">
+        </div>
+        <div class="test-email">
+            <label for="email">邮箱测试:</label>
+            <input type="text" id="email">
+        </div>
     </div>
-    <script src="/assets/RegExp.js"></script>
-    <script></script>
+    
+    <script>
+        console.log(betterRegExp)
+        function $(id){
+            return document.getElementById(id)
+        }
+        function inputValue(id){
+            return $(id).value
+        }
+
+        var $phone = $('phone')
+        var $email = $('email')
+
+        $phone.addEventListener('blur',isPhone)
+        $email.addEventListener('blur',isEmail)
+
+        var bre = new betterRegExp.default()
+        function isPhone(){
+            console.log(bre.isPhone(inputValue('phone')))
+        }
+        function isEmail(){
+            console.log(bre.isEmail(inputValue('email')))
+        }
+    </script>
 </body>
 </html>
