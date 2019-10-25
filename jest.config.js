@@ -4,9 +4,7 @@ module.exports = {
       '^.+\\.tsx?$': "ts-jest"
     },
     transformIgnorePatterns: ['/node_modules/'],
-    // 收集测试覆盖率文件范围
     collectCoverageFrom: ['**/src/**/*.[jt]s?(x)','!**/node_modules/**'],
-    // 测试覆盖阈值
     coverageThreshold: {
       global: {
         statements: 95,
@@ -16,7 +14,6 @@ module.exports = {
       }
     },
     testURL: 'http://localhost',
-    // 测试文件
     testMatch: ['**/__tests__/**/*.[jt]s?(x)'],
   }
   
