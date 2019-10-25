@@ -29,7 +29,6 @@
     </div>
     
     <script>
-        console.log(betterRegExp)
         function $(id){
             return document.getElementById(id)
         }
@@ -43,7 +42,7 @@
         $phone.addEventListener('blur',isPhone)
         $email.addEventListener('blur',isEmail)
 
-        var bre = new betterRegExp.default()
+        var bre = new BetterRegExp.default()
         function isPhone(){
             console.log(bre.isPhone(inputValue('phone')))
         }

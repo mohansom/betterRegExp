@@ -11,7 +11,7 @@ module.exports = {
     output:{
         path: resolve('dist'),
         filename: 'betterRegExp.js',
-        library: 'betterRegExp',
+        library: 'BetterRegExp',
         libraryTarget: 'umd',
         publicPath: '/assets/'
     },

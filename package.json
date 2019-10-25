@@ -2,6 +2,8 @@
   "name": "better-reg-exp",
   "version": "0.0.1",
   "description": "",
+  "main": "dist/betterRegExp.js",
+  "typings": "dist/types/index.d.ts",
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.js --hot --host localhost --port 9090",
     "build": "webpack --config build/webpack.prod.js",
