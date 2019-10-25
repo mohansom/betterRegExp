@@ -1,6 +1,6 @@
 {
-  "name": "better-reg-exp",
-  "version": "0.0.1",
+  "name": "better-regexp",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/betterRegExp.js",
   "typings": "dist/types/index.d.ts",
