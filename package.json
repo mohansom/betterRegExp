@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.js --hot --host localhost --port 9090",
+    "dev": "webpack-dev-server --config build/webpack.dev.js --contentBase ./demo --open --hot --host localhost --port 9090",
     "build": "webpack --config build/webpack.prod.js",
     "test": "jest --watch",
     "test:cov": "jest --coverage --watch"

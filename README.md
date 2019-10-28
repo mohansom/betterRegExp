@@ -1,6 +1,6 @@
 # betterRegExp
 
-基于TDD模式,使用Jest测试编写单元测试,编写工作中常用的正则表达式
+基于TDD模式,使用Jest编写单元测试开发,编写工作中常用的正则表达式
 
 ## Install
 
